@@ -1,0 +1,26 @@
+{
+  "name": "dibujillo-ws",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon ./main.js --ignore data/",
+    "serve:debug": "nodemon --inspect ./main.js --ignore data/",
+    "start": "node ./main.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "canvas": "^2.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-handlebars": "^4.0.4",
+    "express-ws": "^4.0.0",
+    "lzutf8": "^0.5.5",
+    "moment": "^2.27.0",
+    "os-utils": "0.0.14",
+    "string-similarity": "^4.0.1",
+    "winston": "^3.2.1",
+    "ws": "^7.3.0"
+  }
+}
