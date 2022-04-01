@@ -1,0 +1,23 @@
+<%= process.env.NODE_ENV === 'development' ? (`
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name="description" content="Dibuja y juega con tus amigos de manera online">
+    <link rel="icon" href="/favicon.ico">
+    <title>Dibujillo - Dibuja y juega con tus amigos</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but ${htmlWebpackPlugin.options.title} doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+`) : (`
+<div id="app"></div>
+`) %>

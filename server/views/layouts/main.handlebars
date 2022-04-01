@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name="description" content="{{{ description }}}">
+
+	<meta property="og:site_name" content="dibujillo.com">
+	<meta property="og:title" content="{{{ title }}}">
+	<meta property="og:description" content="{{{ description }}}">
+	<meta property="og:image" content="/img/Logo.png">
+
+	<meta name="twitter:title" content="{{{ title }}}">
+	<meta name="twitter:description" content=" {{{ description }}}">
+	<meta name="twitter:image" content="/img/Logo.png">
+	<meta name="twitter:card" content="summary_large_image">
+
+	{{#if room}}
+	<meta name="dibujillo:room_code" content="{{{room.code}}}">
+	<meta name="dibujillo:room_name" content="{{{room.name}}}">
+	<meta name="dibujillo:room_creator_name" content="{{{room.owner}}}">
+	<meta name="dibujillo:room_collection_name" content="{{{room.collectionName}}}">
+	<meta name="dibujillo:room_max_players" content="{{{room.maxPlayers}}}">
+	<meta name="dibujillo:room_players" content="{{{room.users.length}}}">
+	{{/if}}
+	<link rel="icon" href="/favicon.ico">
+	<link rel="manifest" href="/manifest.json">
+	<title>{{{ title }}}</title>
+</head>
+<body>
+	{{{ body }}}
+</body>
+</html>
